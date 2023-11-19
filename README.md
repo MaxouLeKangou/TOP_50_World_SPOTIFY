@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+<h1 align="center">TOP 50 WORLD</h1>
+<p align="center">Ce site vous permet de découvrir le TOP 50 mondial de Spotify !</p><br />
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+## 🏹 **Comment le télécharger et l'installer ?**
+Pour télécharger ce code, ils vous suffit de cliquer [ici](https://github.com/MaxouLeKangou/TOP_50_World_SPOTIFY/releases) ! Attention. Ce code utilise un certain nombre de dépendances.<br />
+Dans [Visual Studio Code](https://code.visualstudio.com/), entrer dans votre Terminal et écrire ```npm install```, puis pour lancer le serveur local, entrer ```npm run dev```.<br /><br />
+N'oubliez pas de créer un fichier assets/secret/key.js et entrer votre clé API [SPOTIFY]([https://developer.riotgames.com/](https://developer.spotify.com/dashboard))
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+clientId: '',
+clientSecret: '',
 ```
+<br />
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+## 👀 **Comment utiliser correctement TOP_50_World_SPOTIFY ?**
+Vous pouvez accèder au site officiel en utilisant le lien [ici](https://top50.bessarion.fr) ou si dessous.<br />
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+https://top50.bessarion.fr
 ```
+<br />
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 🎓 **Vous avez besoin d'aide ?**
+
+- [Mail](mailto:maxime.legrand111@outlook.com)
+- [Mon Discord](https://discord.gg/8SfwgQqQxh)
+
+_Je remercie toutes les personnes qui téléchargerons et aiderons à améliorer ce code !_
