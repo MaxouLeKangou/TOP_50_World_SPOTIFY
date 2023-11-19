@@ -85,7 +85,7 @@
       <p class="text-[16px] md:text-[24px]">THE WEEK OF {{ formattedDate }}</p>
     </header>
 
-    <div class="flex flex-col items-center gap-4 md:gap-8 py-[10vh] md:py-[14vh]">
+    <div class="flex flex-col items-center gap-4 md:gap-6 py-[10vh] md:py-[14vh]">
       <SongCard v-for="song in playlist" :key="song.position" :song="song" class="w-full md:w-[650px]"/>
     </div>
 
