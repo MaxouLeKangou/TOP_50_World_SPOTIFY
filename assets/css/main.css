@@ -9,21 +9,21 @@ main {
 }
 
 @media (min-width: 768px) {
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-  
-    ::-webkit-scrollbar-track {
-      background: #DE6FE0;
-    }
-  
-    ::-webkit-scrollbar-thumb {
-      background: #C765C9;
-      border-radius: 100px;
-    }
-  
-    ::-webkit-scrollbar-thumb:hover {
-      background: #AC54AE;
-    }
+  ::-webkit-scrollbar {
+    width: 10px;
   }
+
+  ::-webkit-scrollbar-track {
+    background: #DE6FE0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C765C9;
+    border-radius: 100px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #AC54AE;
+  }
+}
   

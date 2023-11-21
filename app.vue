@@ -1,5 +1,14 @@
 <script setup>
   import config from 'assets/secret/key.js'
+  import axios from 'axios'
+
+  const scrollToTop = () => {
+    const topElement = document.getElementById('top');
+
+    if (topElement) {
+      topElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const currentDate = ref(new Date());
   const formattedDate = ref("");
@@ -11,10 +20,7 @@
     formattedDate.value = `${dateParts[0].toUpperCase()} ${dateParts[1]} ${dateParts[2]}`;
   };
 
-
   const playlist = ref([]);
-
-  import axios from 'axios';
 
   const clientId = config.clientId;
   const clientSecret = config.clientSecret;
@@ -78,7 +84,7 @@
   <main class="h-screen overflow-y-auto bg-gradient-to-br from-[#FFBB7C] to-[#FC7CFF] text-white px-[6%]">
     <div id="top"></div>
 
-    <a href="#top" class="block rounded-full bg-[#00000033] absolute bottom-8 right-8 md:right-20 w-[40px] h-[40px] md:w-[50px] md:h-[50px]"><img src="img/ARROW.svg" class="w-full" style="transform: rotate(180deg);" alt=""></a>
+    <button id="top" @click="scrollToTop" class="block rounded-full bg-[#00000033] absolute bottom-8 right-8 w-[40px] h-[40px] md:w-[50px] md:h-[50px]"><img src="img/ARROW.svg" class="w-full" style="transform: rotate(180deg);" alt=""></button>
 
     <header class="text-center font-Anton pt-[8vh]">
       <h1 class="text-[60px] md:text-[100px]">THE TOP 50</h1>
