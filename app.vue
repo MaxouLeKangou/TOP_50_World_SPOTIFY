@@ -27,7 +27,8 @@
   <main class="h-screen overflow-y-auto bg-gradient-to-br from-[#FFBB7C] to-[#FC7CFF] text-white px-[6%]">
     <div id="top"></div>
 
-    <button id="top" @click="scrollToTop" class="block rounded-full bg-[#00000033] absolute bottom-8 right-8 w-[40px] h-[40px] md:w-[50px] md:h-[50px]"><img src="img/ARROW.svg" class="w-full" style="transform: rotate(180deg);" alt=""></button>
+    <button id="top" @click="scrollToTop" class="block rounded-full bg-[#00000033] absolute bottom-8 right-8 w-[40px] h-[40px] md:w-[50px] md:h-[50px]"><img src="public/img/arrow.svg" class="w-full" style="transform: rotate(180deg);" alt=""></button>
+
 
     <header class="text-center font-Anton pt-[8vh]">
       <h1 class="text-[60px] md:text-[100px]">THE TOP 50</h1>
@@ -37,6 +38,7 @@
     <div class="flex flex-col items-center gap-4 md:gap-6 py-[10vh] md:py-[14vh]">
       <SongCard v-for="song in playlist" :key="song.position" :song="song" class="w-full md:w-[650px]"/>
     </div>
+
 
     <footer class="py-[4vh] flex flex-col gap-8 text-center">
       <p class="font-light italic text-sm md:text-lg">This platform showcases Spotify's global TOP 50!<br/>I'm using their API to create an experience similar to a Billboard on Spotify.</p>

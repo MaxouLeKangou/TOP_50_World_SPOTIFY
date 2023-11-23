@@ -13,7 +13,7 @@
             </div>
           </div>
           <div class="flex items-center"> <!-- L'élément sera aligné à droite -->
-            <img src="img/PLAY.svg" alt="Icon to play the song on Spotify" class="w-6 h-6 md:w-10 md:h-10">
+            <img src="../public/img/PLAY.svg" alt="Icon to play the song on Spotify" class="w-6 h-6 md:w-10 md:h-10">
           </div>
       </div>
     </div>

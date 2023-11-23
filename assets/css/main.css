@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,4 +27,3 @@ main {
     background: #AC54AE;
   }
 }
-  
