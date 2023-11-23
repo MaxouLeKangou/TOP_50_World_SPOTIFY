@@ -27,7 +27,7 @@
   <main class="h-screen overflow-y-auto bg-gradient-to-br from-[#FFBB7C] to-[#FC7CFF] text-white px-[6%]">
     <div id="top"></div>
 
-    <button id="top" @click="scrollToTop" class="block rounded-full bg-[#00000033] absolute bottom-8 right-8 w-[40px] h-[40px] md:w-[50px] md:h-[50px]"><img src="public/img/arrow.svg" class="w-full" style="transform: rotate(180deg);" alt=""></button>
+    <button id="top" @click="scrollToTop" class="block rounded-full bg-[#00000033] absolute bottom-8 right-8 w-[40px] h-[40px] md:w-[50px] md:h-[50px]"><IconArrow class="w-full" style="transform: rotate(180deg);"/></button>
 
 
     <header class="text-center font-Anton pt-[8vh]">
