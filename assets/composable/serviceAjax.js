@@ -1,8 +1,8 @@
-import config from '../secret/key.js'
+import 'netlify-env';
 import axios from 'axios'
 
-const clientId = config.clientId;
-const clientSecret = config.clientSecret;
+const clientId = process.env.SPOTIFY_API_CLIENT;
+const clientSecret = process.env.SPOTIFY_API_KEY;
 
 const getToken = async () => {
     const credentials = `${clientId}:${clientSecret}`;
