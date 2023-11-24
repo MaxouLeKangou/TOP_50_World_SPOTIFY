@@ -5,6 +5,7 @@ const clientId = process.env.SPOTIFY_API_CLIENT;
 const clientSecret = process.env.SPOTIFY_API_KEY;
 
 const getToken = async () => {
+    console.log(process.env.SPOTIFY_API_CLIENT, clientSecret);
     const credentials = `${clientId}:${clientSecret}`;
     const base64Credentials = btoa(credentials);
 

@@ -16,4 +16,8 @@ export default defineNuxtConfig({
       }
     },
 
-  })
+    env: {
+      enabled: true,
+    },
+
+})

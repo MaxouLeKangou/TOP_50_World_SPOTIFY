@@ -7,8 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "npm run build && netlify deploy --prod"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -23,6 +22,7 @@
   },
   "dependencies": {
     "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
     "locomotive-scroll": "^5.0.0-beta.10",
     "netlify-env": "^0.0.4"
   }
