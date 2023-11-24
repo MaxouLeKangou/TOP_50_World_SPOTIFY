@@ -29,7 +29,6 @@ const getPlaylistTracks = async (token, playlistId) => {
 };
 
 export const getPlaylistData = async () => {
-  console.log(clientId, clientSecret);
   try {
     const token = await getToken();
     const playlistId = '37i9dQZEVXbMDoHDwVN2tF';
