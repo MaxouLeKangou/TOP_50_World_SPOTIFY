@@ -1,4 +1,3 @@
-// import config from '../secret/key.js'
 import axios from 'axios'
 import dotenv from "dotenv";
 
