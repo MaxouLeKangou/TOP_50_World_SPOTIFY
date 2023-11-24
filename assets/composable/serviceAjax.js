@@ -1,6 +1,6 @@
 // import config from '../secret/key.js'
 import axios from 'axios'
-import config from 'CONFIG.env'
+import config from '../../CONFIG.env'
 
 const clientId = config.SPOTIFY_API_CLIENT;
 const clientSecret = config.SPOTIFY_APY_KEY;
