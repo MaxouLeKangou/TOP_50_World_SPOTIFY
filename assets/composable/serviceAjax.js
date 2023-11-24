@@ -1,10 +1,7 @@
 import axios from 'axios'
-import 'dotenv/config';
 
-dotenv.config();
-
-const clientId = process.env.SPOTIFY_API_CLIENT;
-const clientSecret = process.env.SPOTIFY_API_KEY;
+const clientId = 'facc0d43c63e44d2b7fb2c677626cc97';
+const clientSecret = 'd8e6ad7164f542a4b1ffb3cc2b0988f9';
 
 const getToken = async () => {
     console.log(clientId, clientSecret);
