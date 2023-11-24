@@ -1,9 +1,8 @@
 // import config from '../secret/key.js'
 import axios from 'axios'
-import config from '../../CONFIG.env'
 
-const clientId = config.SPOTIFY_API_CLIENT;
-const clientSecret = config.SPOTIFY_APY_KEY;
+const clientId = process.env.SPOTIFY_API_CLIENT;
+const clientSecret = process.env.SPOTIFY_API_KEY;
 
 const getToken = async () => {
     const credentials = `${clientId}:${clientSecret}`;
