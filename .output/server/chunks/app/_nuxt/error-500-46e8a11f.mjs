@@ -62,4 +62,4 @@ _sfc_main.setup = (props, ctx) => {
 const error500 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-df79c84d"]]);
 
 export { error500 as default };
-//# sourceMappingURL=error-500-1691b11b.mjs.map
+//# sourceMappingURL=error-500-46e8a11f.mjs.map
