@@ -1,8 +1,11 @@
 // import config from '../secret/key.js'
 import axios from 'axios'
+import dotenv from "dotenv";
 
-const clientId = process.env.get("SPOTIFY_API_CLIENT");
-const clientSecret = process.env.get("SPOTIFY_API_KEY");
+dotenv.config();
+
+const clientId = process.env.SPOTIFY_API_CLIENT;
+const clientSecret = process.env.SPOTIFY_API_KEY;
 
 const getToken = async () => {
     console.log(clientId, clientSecret);
