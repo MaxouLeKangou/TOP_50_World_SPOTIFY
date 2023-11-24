@@ -1,17 +1,9 @@
 // import config from '../secret/key.js'
 import axios from 'axios'
+import config from 'CONFIG.env'
 
-let clientId;
-let clientSecret;
-
-if (typeof process.env.SPOTIFY_API_CLIENT !== 'undefined' && process.env.SPOTIFY_API_CLIENT !== '') {
-  // Exécution dans l'environnement de déploiement Netlify
-  clientId = process.env.SPOTIFY_API_CLIENT;
-  clientSecret = process.env.SPOTIFY_API_KEY;
-} else {
-  // Exécution localement ou dans un environnement différent
-  console.error('Les variables d\'environnement SPOTIFY_API_CLIENT et SPOTIFY_API_KEY ne sont pas définies.');
-}
+const clientId = config.SPOTIFY_API_CLIENT;
+const clientSecret = config.SPOTIFY_APY_KEY;
 
 const getToken = async () => {
     const credentials = `${clientId}:${clientSecret}`;
@@ -38,7 +30,6 @@ const getPlaylistTracks = async (token, playlistId) => {
 };
 
 export const getPlaylistData = async () => {
-  console.log(clientId, clientSecret);
   try {
     const token = await getToken();
     const playlistId = '37i9dQZEVXbMDoHDwVN2tF';
