@@ -1,6 +1,12 @@
 <script setup>
   import { getPlaylistData } from 'assets/composable/serviceAjax.js';
 
+  const runtimeConfig = useRuntimeConfig()
+
+  const clientId = runtimeConfig.public.clientId;
+  const clientSecret = runtimeConfig.public.clientSecret;
+
+
   const scrollToTop = () => {
     const topElement = document.getElementById('top');
     topElement.scrollIntoView({ behavior: 'smooth' });
@@ -20,6 +26,7 @@
   onMounted(async () => {
     formatDate();
     playlist.value = await getPlaylistData();
+    console.log(clientId, clientSecret);
   });
 </script>
 

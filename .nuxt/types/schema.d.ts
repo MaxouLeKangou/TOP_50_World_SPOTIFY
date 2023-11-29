@@ -14,7 +14,9 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   clientId: string,
 
+   clientSecret: string,
   }
 }
 declare module 'vue' {

@@ -16,8 +16,11 @@ export default defineNuxtConfig({
       }
     },
 
-    env: {
-      enabled: true,
+    runtimeConfig: {
+      public: {
+        clientId: process.env.SPOTIFY_API_CLIENT,
+        clientSecret: process.env.SPOTIFY_API_KEY
+      }
     },
 
 })

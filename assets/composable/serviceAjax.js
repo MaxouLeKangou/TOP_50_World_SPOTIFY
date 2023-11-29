@@ -1,7 +1,12 @@
 import axios from 'axios'
+// const runtimeConfig = useRuntimeConfig()
 
-const clientId = 'facc0d43c63e44d2b7fb2c677626cc97';
-const clientSecret = 'd8e6ad7164f542a4b1ffb3cc2b0988f9';
+// const clientId = runtimeConfig.public.SPOTIFY_API_CLIENT;
+// const clientSecret = runtimeConfig.public.SPOTIFY_API_KEY;
+
+
+
+
 
 const getToken = async () => {
     const credentials = `${clientId}:${clientSecret}`;
