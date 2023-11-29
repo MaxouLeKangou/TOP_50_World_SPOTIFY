@@ -69,6 +69,7 @@
   onMounted(async () => {
     formatDate();
     playlist.value = await getPlaylistData();
+    console.log(clientId, clientSecret);
   });
 </script>
 
